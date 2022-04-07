@@ -47,7 +47,7 @@ body {
     height: 44px;
 }
 
-.intro {
+.intro1 {
     padding-top: 100px;
     align-items: center;
     min-height: 100vh;
@@ -61,30 +61,42 @@ body {
 .lorem {
     font-size: 50px;
     padding-bottom: 50px;
-    padding-left: 100px;
+    padding-left: 50px;
     text-align: center;
 }
 .lorem2 {
-    padding-left: 100px;
+    padding-left: 50px;
 
+}
+.intro-img {
+    height: auto;
+    display: flex;
+    margin-right: 20px;
 }
 
 
-
 .top3 {
-    font-size: 50px;
     text-align: center;
     color:  black;
     background: white;
     min-height: 100vh;
 }
 .titulo {
+    font-size: 50px;
     color: black;
+    padding-top: 50px;
 }
 .texto {
-    font-size: 20px;
+    font-size: 15px;
     color:  black;
+    margin-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+
+
+
+
 .top3-jobs {
     font-size: 50px;
     text-align: center;
