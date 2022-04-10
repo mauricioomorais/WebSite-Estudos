@@ -65,7 +65,6 @@ body {
 }
 .lorem2 {
     padding-left: 50px;
-
 }
 .intro-img {
     height: auto;
@@ -97,12 +96,106 @@ body {
 
 
 .top3-jobs {
-    font-size: 50px;
-    text-align: center;
     background-image: url(../imagens/img-fund.svg);
     min-height: 100vh;
 }
+h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.titulo2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+.comentario {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 40px;
+}
 .texto2 {
-    font-size: 20px;
+    font-size: 15px;
     color:  white;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+}
+.img-homem {
+    display: block;
+    text-align: center;
+}
+.homem {
+    height: 300px;   
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    counter-reset: grid-counter;
+}
+.grid h3::before {
+counter-increment: grid-counter;
+content: counter(grid-counter);
+padding-right: 15px;
+font-size: 70px;
+font-style: italic;
+}
+.img {
+    display: block;
+}
+.img-html{
+    max-height: 350px;
+    padding-top: 40px;
+}
+
+
+
+.fotos {
+    min-height: 100vh;
+    background: white;
+    color: black;
+}
+.foto-titulo1 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 10px;
+    color: black;
+}
+.foto-titulo {
+    font-size: 50px;
+    text-align: left;
+    padding-top: 50px;
+    color: black;
+    padding-left: 40px;
+}
+.foto-comentario {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 40px;
+    color: black;
+}
+.foto-texto {
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+.grid {
+    display: grid;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.imagens {
+    width: 350px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    border: solid 10px;
+    border-color: rgb(250, 240, 223);
 }
