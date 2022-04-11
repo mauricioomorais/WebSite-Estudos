@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segundo estudo </title>
     <link rel="stylesheet" type="text/css" href="CSS/corpo.css">
-    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
 </head>
 <body>
     <aside>
@@ -16,7 +15,7 @@
                 <div class="menu">
                     <ul>
                         <li>
-                        <a href="#intro">Home</a>  
+                            <a href="#intro">Home</a>  
                         </li>
                         <li>
                             <a href="#top3">O que é HTML</a>
@@ -25,10 +24,10 @@
                             <a href="#aplicações">Aplicações HTML</a>
                         </li>
                         <li>
-                            <a href="#foto">Fotos</a>
+                            <a href="#Galeria">Galeria</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -114,29 +113,113 @@
 
     <section>
             <div class="fotos">
-                    <h2 id="foto" class="foto-titulo">Galeria de fotos</h2>
-                    <p class="foto-comentario">Fotos tiradas do site http//taltataltla</p>
+                    <h2 id="Galeria" class="foto-titulo">Galeria de fotos</h2>
+                    <p class="foto-comentario">Fotos registradas do site https://source.unsplash.com/random/300x300</p>
                         <div class="grid">
-                            <article>
-                                <img class="imagens" src="imagens/foto1.jpg"  alt="imagem-homem-olhando-globo">
-                            </article>
-                            <article>
-                                <img class="imagens" src="imagens/foto3.jpg"  alt="imagem-homem-olhando-globo">
-                            </article>
-                            <article>
-                                <img class="imagens" src="imagens/foto2.jpg" alt="imagem-homem-olhando-globo">
-                            </article>
-                            <article>
-                                <img class="imagens" src="imagens/foto4.jpg"  alt="imagem-homem-olhando-globo">
-                            </article>
-                            <article>
-                                <img class="imagens" src="imagens/foto5.jpg"  alt="imagem-homem-olhando-globo">
-                            </article>
-                            <article>
-                                <img class="imagens" src="imagens/foto6.jpg"  alt="imagem-homem-olhando-globo">
-                            </article>
+                            <div class="imagens">
+                                <img  src="https://source.unsplash.com/random/300x300?r=0"  alt="imagem-random-unsplash">
+                            </div>
+                            <div class="imagens">
+                                <img  src="https://source.unsplash.com/random/300x300?r=1"  alt="imagem-random-unsplash">
+                            </div>
+                            <div class="imagens">
+                                <img src="https://source.unsplash.com/random/300x300?r=2" alt="imagem-random-unsplash">
+                            </div>
+                            <div class="imagens">
+                                <img src="https://source.unsplash.com/random/300x300?r=3"  alt="imagem-random-unsplash">
+                            </div>
+                            <div class="imagens">
+                                <img src="https://source.unsplash.com/random/300x300?r=4"  alt="imagem-random-unsplash">
+                            </div>
+                            <div class="imagens">
+                                <img src="https://source.unsplash.com/random/300x300?r=5"  alt="imagem-random-unsplash">
+                            </div>
                         </div>
             </div>
     </section>
+
+<section class="contatos" id="contato">
+    <div>
+        <h2 class="contato-titulo">Contatos</h2>
+        <div class="contatos2">
+            <div> 
+                <p class="contato-text">O desenvolvimento web é uma das áreas mais promissoras do momento em tecnologia. Afinal, a construção de sites é uma demanda cada vez maior, já que a maioria das empresas deseja um espaço na internet para não só se comunicar com seu público, mas também apresentar seu produto.
+                    <br>
+                    <br>
+                    Para aprender a criar websites usando programação e suprir essa alta demanda, a pessoa precisa conhecer e dominar o HTML (Hyper Text Markup Language, ou linguagem de marcação de textos), uma linguagem que fornece o esqueleto de toda página web. 
+                    <br>
+                    <br>
+                    O HTML é uma tecnologia mais simples, porém efetiva e muito importante para uma carreira em TI. É essencial conhecer seus princípios e saber integrar as regras com as de outras linguagens, como CSS e JavaScript, para desenvolver aplicações robustas e funcionais na web.</p>
+            </div class="contato-img">    
+                <div class="contato-img2">      
+                <img src="imagens/undraw_agreement_re_d4dv.svg" width ="100%" alt="Imagem-css-javascript-html">
+                </div> 
+            </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="contato-titulo6">Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível</h2>
+        </div>
+    </div>
+    
+    <div class="form-grupo">
+        <fieldset class="contato-form">
+            <legend>Contacte me</legend>
+
+                <div class="contato-grupo">
+                    <label for="Nome">Primeiro Nome</label>
+                    <input placeholder="Seu Nome" type="text" name="Primeiro nome" class="primeiro-nome">
+                </div>
+                
+                <div class="contato-grupo">
+                    <label for="Sobrenome">Sobrenome</label>
+                    <input placeholder="Seu Sobrenome" type="text" name="Sobrenome" class="Sobrenome">
+                </div>
+
+                <div class="contato-grupo">
+                    <label for="Email">E-mail</label>
+                    <input placeholder="Seu E-mail" type="email" name="email" class="email">
+                </div>
+
+                <div class="contato-grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" classe="mensagem" cols="30" rows="10"></textarea>
+                </div>
+                
+                <div class="contato-grupo">
+                    <button class="botão" type="submit">Enviar contato</button>
+                </div>
+        </fieldset>
+    </div> 
+</section>
+
+
+
+    <footer>
+        <h3 class="rodape-texto">Feito com por Mauricio Morais.</h3>
+        <div class="rodape">
+
+            <ul>
+                <li>
+                    Instagem
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Facebook
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Linkedin
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Github
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

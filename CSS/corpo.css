@@ -7,6 +7,7 @@
     font-family: 'Bree Serif', serif;
     color:  #ffff;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 body {
     background-image: url(../imagens/img-fund.svg);
@@ -64,7 +65,7 @@ body {
     text-align: center;
 }
 .lorem2 {
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .intro-img {
     height: auto;
@@ -99,7 +100,7 @@ body {
     background-image: url(../imagens/img-fund.svg);
     min-height: 100vh;
 }
-h3 {
+.grid h3 {
     font-size: 25px;
     text-align: center;
     padding-top: 50px;
@@ -137,18 +138,20 @@ h3 {
     counter-reset: grid-counter;
 }
 .grid h3::before {
-counter-increment: grid-counter;
-content: counter(grid-counter);
-padding-right: 15px;
-font-size: 70px;
-font-style: italic;
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    padding-right: 15px;
+    font-size: 70px;
+    font-style: italic;
 }
 .img {
     display: block;
 }
 .img-html{
-    max-height: 350px;
-    padding-top: 40px;
+    height: 300px;
+    border: solid rgb(247, 241, 231) 10px;
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 
@@ -175,27 +178,232 @@ font-style: italic;
 }
 .foto-comentario {
     text-align: left;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 40px;
-    color: black;
-}
-.foto-texto {
-    font-size: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
-    align-items: center;
-    text-align: center;
     color: black;
 }
 .grid {
     display: grid;
-    padding-left: 50px;
-    padding-top: 100px;
+    padding-left: 40px;
+    padding-top: 30px;
 }
 .imagens {
-    width: 350px;
-    margin-bottom: 50px;
-    margin-right: 30px;
+    width: 100%;
+    margin-bottom: 40px;
     border: solid 10px;
-    border-color: rgb(250, 240, 223);
+    border-color: rgb(250, 245, 237);
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    
 }
+
+
+
+.contatos {
+    padding-top: 70px;
+    align-items: center;
+    min-height: 100vh;
+}
+.contatos2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+.contato-titulo {
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    text-align: center;
+}
+.contato-img {
+    justify-items: center;
+}
+.contato-img2 {
+  justify-items: center;
+  padding-right: 20px;
+  padding-top: 20px;
+
+}
+.contato-text {
+    padding-left: 40px;
+}
+
+.contato-titulo6 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+
+
+
+.contato-form {
+    display: block;
+    border: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+legend {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.form-grupo {
+    min-height: 320px;
+    justify-items: center;
+}
+.contato-grupo {
+    display: block;
+}
+.form-grupo input,
+.form-grupo textarea {
+    border: none;
+    background: white;
+    padding-right:  0px;
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    width: 100%;
+   
+}
+.form-grupo textarea {
+    width: 100%;
+}
+.primeiro-nome,
+.Sobrenome,
+.email {
+    color: black;
+}
+.form-grupo textarea {
+    width: 100%;
+}
+.form-grupo input, .form-grupo textarea {
+    border: none;
+    background: white;
+    padding-right: 0px;
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.form-grupo input:focus, 
+.form-grupo textarea:focus {
+    box-shadow: 0 0 10px 2px red;
+}
+textarea {
+    color: black;
+}
+.form-grupo ::placeholder {
+    color: rgb(197, 195, 195)
+}
+.contato-form label {
+    display: block;
+    padding-bottom: 5px;
+}
+.contato-form button {
+    color: white;
+    background: none;
+    padding: 20px 50px 20px 50px;
+    margin: 10px;
+    font-size: 20px;
+    border: solid white;
+    cursor: pointer;
+}
+.contato-form button:hover {
+    transform: scale(1.1) translate(5%, -5%);
+    background: white;
+    color: black;
+    border: solid black;
+}
+
+
+@media (max-width: 800px) {
+    .intro2, .grid, .contatos2 {
+        grid-template-columns: 1fr;
+    }
+    .img-html, .contato-grupo {
+        max-width: 100%;
+    }
+
+    .topo {
+        bottom: 0;
+        border: solid red;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        border: 0;   
+    }
+    .logo {
+        padding: 0;
+        padding-top: 100px;
+        text-align: center;
+        border: solid rgb(38, 0, 255);
+    }
+    .topo, .menu ul, .menu {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+        padding: 0;
+        margin: 0;
+        border: 0;        
+    }
+    .menu ul li a {
+        border: solid rgb(0, 255, 115);
+    }
+    .menu {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+footer {
+    padding-top: 50px;
+}
+
+.rodape-texto {
+    background: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.rodape {
+    background: black;
+    min-height: 10vh;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
