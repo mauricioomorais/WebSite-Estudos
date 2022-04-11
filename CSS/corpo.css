@@ -47,45 +47,45 @@ body {
 .espaco-menu {
     height: 44px;
 }
-.intro1 {
+.home {
     padding-top: 100px;
     align-items: center;
     min-height: 100vh;
 }
-.intro2 {
+.home-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.lorem {
+.home-titulo {
     font-size: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
     text-align: center;
 }
-.lorem2 {
+.home-texto {
     padding-left: 40px;
 }
-.intro-img {
+.home-img {
     height: auto;
     display: flex;
     margin-right: 20px;
 }
 
 
-.top3 {
+.home-two {
     text-align: center;
     color:  black;
     background: white;
     min-height: 100vh;
 }
-.titulo {
+.home-two-titulo {
     font-size: 50px;
     color: black;
     padding-top: 50px;
 }
-.texto {
+.home-two-texto {
     font-size: 15px;
     color:  black;
     margin-top: 30px;
@@ -96,7 +96,7 @@ body {
 
 
 
-.top3-jobs {
+.home-three {
     background-image: url(../imagens/img-fund.svg);
     min-height: 100vh;
 }
@@ -107,17 +107,17 @@ body {
     position: relative;
     padding-bottom: 10px;
 }
-.titulo2 {
+.home-three-titulo {
     font-size: 50px;
     text-align: center;
     padding-top: 50px;
 }
-.comentario {
+.home-three-comentario {
     text-align: left;
     padding-top: 50px;
     padding-left: 40px;
 }
-.texto2 {
+.home-three-texto {
     font-size: 15px;
     color:  white;
     margin-left: 30px;
@@ -125,11 +125,11 @@ body {
     align-items: center;
     text-align: center;
 }
-.img-homem {
+.home-three-img {
     display: block;
     text-align: center;
 }
-.homem {
+.home-three-img-two {
     height: 300px;   
 }
 .grid {
@@ -161,14 +161,6 @@ body {
     background: white;
     color: black;
 }
-.foto-titulo1 {
-    font-size: 25px;
-    text-align: center;
-    padding-top: 50px;
-    position: relative;
-    padding-bottom: 10px;
-    color: black;
-}
 .foto-titulo {
     font-size: 50px;
     text-align: left;
@@ -196,7 +188,12 @@ body {
     max-width: 300px;
     max-height: 300px;
     overflow: hidden;
-    
+}
+.imagens img {
+    transition: all 300ms ease-in-out;
+}
+.imagens img:hover {
+    transform: translate(-3%, 3%) rotate(5deg) scale(1.3);
 }
 
 
@@ -329,7 +326,7 @@ textarea {
 
 
 @media (max-width: 800px) {
-    .intro2, .grid, .contatos2 {
+    .home-box, .grid, .contatos2 {
         grid-template-columns: 1fr;
     }
     .img-html, .contato-grupo {
