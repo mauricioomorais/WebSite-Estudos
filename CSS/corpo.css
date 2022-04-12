@@ -238,6 +238,7 @@ body {
     margin-left: 40px;
     padding-left: 30%;
     padding-right: 30%;
+    padding-bottom: 40px;
 }
 legend {
     font-style: italic;
@@ -250,6 +251,7 @@ legend {
 .contato-grupo {
     display: block;
 }
+
 .form-grupo input,
 .form-grupo textarea {
     border: none;
@@ -317,6 +319,7 @@ textarea {
 .close-menu {
     display: none;
 }
+
 
 
 @media (max-width: 800px) {
@@ -400,40 +403,24 @@ textarea {
 
 
 
-footer {
-    padding-top: 30px;
-    background: white;
-    color: black;
-    display: block;
-    justify-items: center;
-}
-
-.rodape-texto {
-    text-align: center;
+.rodape-topo {
     padding-top: 50px;
-    padding-bottom: 10px;
+    background: white;
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.rodape-texto {
     color: black;
+    padding-bottom: 10px;
+    display: block;
+}
+.rodape ul {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
 }
 .rodape ul li a {
-    color: black;
-    padding-bottom: 10px;
-    justify-items: center;
-    display: flex;
-    align-items: center;
+    width: 1020px;
 }
 
-
-.rodape ul {
-    min-height: 10vh;
-    gap: 50px;
-    justify-content: space-evenly;
-    display: flex;
-    justify-items: center;
-}
-
-.rodape ul li img {
-    justify-items: center;
-    align-items: center;
-    justify-items: center;
-    margin-top: 10px;
-}
