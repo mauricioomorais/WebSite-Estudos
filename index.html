@@ -8,12 +8,15 @@
     <link rel="stylesheet" type="text/css" href="CSS/corpo.css">
 </head>
 <body>
-    <aside>
-        <nav>
-            <div class="topo">
-                <h2 class="logo">LOGO</h2>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+
+    <aside class="menuu">
+        <div class="topo">
+            <h1>LOGO</h1>
                 <div class="menu">
-                    <ul>
+                <nav>
+                    <ul onclick="getElementById('close-menu').checked = false;">
                         <li>
                             <a href="#home">Home</a>  
                         </li>
@@ -30,9 +33,9 @@
                             <a href="#contato">Contato</a>
                         </li>
                     </ul>
+                </nav>
                 </div>
             </div>
-        </nav>
     </aside>
     <div class="espaco-menu"></div>
     <section class="home" id="home">
@@ -66,10 +69,10 @@
                             Podemos dizer que o HTML é o componente mais essencial de uma aplicação web. Com ele, é possível criar a estrutura, definir o posicionamento dos elementos, estruturar a divisão de uma página em blocos visuais e combinar texto, imagens e vídeos.
                             <br>
                             <br>
-                            Antes de prosseguir, aproveite e faça o download da trilha de front-end abaixo para entender os múltiplos caminhos que um profissional pode se especializar na área, que vai além dos conhecimentos em HTML.</p>
+                            Antes de prosseguir, aproveite e faça o download da trilha de front-end abaixo para entender os múltiplos caminhos que um profissional pode se especializar na área, que vai além dos conhecimentos em HTML.
                             <br>
                         </p>
-                        <div classe="img">
+                        <div>
                             <img class="img-html" src="imagens/istockphoto-951714510-1024x1024.jpg" alt="codigos-html">
                         </div>
                 </article>
@@ -150,17 +153,16 @@
                     <br>
                     <br>
                     O HTML é uma tecnologia mais simples, porém efetiva e muito importante para uma carreira em TI. É essencial conhecer seus princípios e saber integrar as regras com as de outras linguagens, como CSS e JavaScript, para desenvolver aplicações robustas e funcionais na web.</p>
-            </div class="contato-img">    
-                <div class="contato-img2">      
+            </div>    
+                <div class="contato-img">      
                 <img src="imagens/undraw_agreement_re_d4dv.svg" width ="100%" alt="Imagem-css-javascript-html">
                 </div> 
-            </div>
-            </div>
         </div>
+    </div>
         <div>
             <h2 class="contato-titulo6">Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e retornarei o mais breve possível</h2>
         </div>
-    </div>
+    
     
     <div class="form-grupo">
         <fieldset class="contato-form">
@@ -196,30 +198,35 @@
 
 
     <footer>
-        <h3 class="rodape-texto">Feito com por Mauricio Morais.</h3>
-        <div class="rodape">
-
-            <ul>
-                <li>
-                    Instagem
-                </li>
+        <div>
+        <h2 class="rodape-texto">Feito por Mauricio Morais.</h2>
+            <div class="rodape">
+                <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/mauricioomorais/" target="_blank" ><img src="imagens/icones/Instagram.svg" alt="logo-instagram"></a>
+                        <a href="https://www.instagram.com/mauricioomorais/" target="_blank" >Instagem</a> 
+                    </li>
+                    <li>
+                        <img src="imagens/icones/Facebook.svg" alt="logo-facebook">
+                        <a href="https://www.facebook.com/mauriciomorais2012" target="_blank" >Facebook</a> 
+                    </li>
+                    <li>
+                        <img src="imagens/icones/LinkedIn.svg" alt="logo-linkedin">
+                        <a href="https://www.linkedin.com/in/mauricio-morais-026207213/" target="_blank" >Linkedin</a>
+                    </li>            
+                    <li>
+                        <img src="imagens/icones/Style=Original, Circle Shape=True.svg" alt="logo-Github">
+                        <a href="https://github.com/mauricioomorais" target="_blank" >Github</a>
+                    </li>
+                    <li>
+                        <img src="imagens/icones/WhatsApp.svg" alt="logo-WhatsApp">
+                        <a href="https://api.whatsapp.com/send?phone=5553981314084&text=Ol%C3%A1" target="_blank" >WhatsApp</a>
+                    </li>
             </ul>
-            <ul>
-                <li>
-                    Facebook
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Linkedin
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Github
-                </li>
-            </ul>
+        </nav>
         </div>
+    </div>
     </footer>
 </body>
 </html>
